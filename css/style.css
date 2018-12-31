@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	background: #27AEE1;/*#99e6ff;*/
 }
 
 #navbar {
@@ -17,7 +18,7 @@ body {
 	height: 99.85vh;
 }
 
-/** 
+/**
  * iPad with portrait orientation.
  */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
@@ -26,7 +27,7 @@ body {
   }
 }
 
-/** 
+/**
  * iPad with landscape orientation.
  */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
@@ -80,7 +81,21 @@ body {
 	border-width: 2px;
 }
 
-#cardContainer {
+.cardContainer {
+	height: 95%;
+	width: auto;
+	position: relative;
+	background: #27AEE1;/*#99e6ff;*/
+}
+
+.cardPickerButton {
+    width: 10%;
+    margin: 10%;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#mainPage {
 	height: 95%;
 	width: auto;
 	position: relative;
@@ -90,7 +105,7 @@ body {
 #card {
 	height: 80%;
 	margin: auto;
-	display: block;
+    display: inline-block;
 }
 
 #buttonContainer {
@@ -145,7 +160,16 @@ body {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-#cardContainer p, h1, div {
+.cardContainer p, h1, div {
+
+	margin: 0 auto;
+	text-align: center;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight: bold;
+	color: white;
+}
+
+#mainPage p, h1, div {
 
 	margin: 0 auto;
 	text-align: center;
@@ -158,8 +182,12 @@ body {
 	display: inline;
 }
 
+#noButton {
+    filter: drop-shadow(3px 3px 0 white)
+            drop-shadow(-3px -3px 0 white);
+}
 
-#startButton {
+.startButton {
     width: 160px;
 	height: 40px;
     background: #8e44ad;
@@ -171,7 +199,7 @@ body {
     cursor: pointer;
 }
 
-#startButton p {
+.startButton p {
     color: white;
     font-size: 18px;
     font-weight: 400;
